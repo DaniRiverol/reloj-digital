@@ -1,2 +1,2 @@
-# reloj-digital
-Reloj Digital
+# Reloj despertador digital
+Reloj Digital con funciones de despertador(en proceso)
