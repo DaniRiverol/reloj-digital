@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Reloj digital</title>
+  </head>
+  <body>
+    <div class="clock__container">
+      <div class="clock__display">
+        <div class="clock__display--left">
+          <section class="clock__options">
+            <i class="bx bx-time"></i>
+            <i class="bx bx-timer"></i>
+          </section>
+        </div>
+        <div class="clock__display--center">
+          <section class="clock__week">
+            <span>DO</span>
+            <span>LU</span>
+            <span>MA</span>
+            <span>MI</span>
+            <span>JU</span>
+            <span>VI</span>
+            <span>SA</span>
+          </section>
+          <section class="clock__display--clock">
+            <div class="clock__hour">00</div>
+            <div class="clock__colons">:</div>
+            <div class="clock__minute">00</div>
+            <!-- <div class="clock__colons">:</div>
+            <div class="clock__second">00</div> -->
+            <div class="clock__format--AMPM">AM</div>
+          </section>
+        </div>
+        <div class="clock__display--right">
+          <section class="clock__format">
+            <input type="radio" name="option" id="12" value="12"  /><label for="12"
+              >12hs</label
+            >
+            <input type="radio" name="option" id="24" value="24"/><label for="24"
+              >24hs</label
+            >
+          </section>
+          <div class="clock__date">
+            12/03
+          </div>
+          <div class="weather">
+            <span>34˚</span><i class='bx bxs-thermometer'></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

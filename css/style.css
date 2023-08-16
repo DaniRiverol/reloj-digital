@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&display=swap');
+
+
+:root {
+    --bg-claro: #f9fbf3;
+    --bg-oscuro: #07241b;
+    --font-oscuro: #07241b;
+    --font-claro: #f9fbf3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--font-claro);
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.clock__container {
+    width: 650px;
+    border-radius: 1rem;
+    background-color: var(--bg-oscuro);
+    padding: 20px;
+
+}
+
+.clock__display {
+    height: 220px;
+    border: 3px solid;
+    border-radius: .5rem;
+
+
+    display: grid;
+    grid-template-columns: 40px 1fr 90px;
+}
+
+.clock__display--left {
+    border-right: 1px solid;
+}
+
+.clock__display--left .clock__options {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+
+.clock__display--center {
+    height: 100%;
+}
+
+.clock__week {
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+}
+
+.clock__week span {
+    font-size: 1.1rem;
+    width: 30px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* .clock__week span:nth-child(2) {
+    border-bottom: 2px solid;
+} */
+
+.clock__display--clock {
+    min-width: 100%;
+    max-width: 100%;
+    font-size: 10rem;
+    height: 168px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 10px;
+    font-weight: 600;
+}
+
+.clock__hour, .clock__minute {
+    width: 45%;
+    text-align: center !important;
+}
+
+.clock__colons {
+    width: 10%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.clock__display--clock .clock__format--AMPM {
+    font-size: 1.5rem;
+    font-weight: 500;
+    align-self: baseline;
+    letter-spacing: 0;
+}
+
+.clock__display--right {
+    display: flex;
+    font-size: 1.4rem;
+    flex-direction: column;
+    border-left: 1px solid;
+}
+
+.clock__display--right .clock__format {
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+
+
+.clock__format input[type=radio] {
+    display: none;
+}
+
+.clock__format label {
+    display: inline-block;
+    letter-spacing: 5px;
+    width: 100%;
+    font-weight: 600;cursor: pointer;
+}
+
+.clock__date, .weather {
+    font-size: 1.8rem;
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+}
+
+.clock__date {
+    font-size: 2rem;
+}
+
+.clock__colons {
+    animation: tic-tac 1.01s infinite;
+}
+
+.weather span {
+    font-size: 1.61rem;
+}
+
+@keyframes tic-tac {
+    0%, 100% {
+        opacity: 1;
+    }
+
+
+    50% {
+        opacity: 0;
+    }
+
+}
